@@ -1,0 +1,43 @@
+.carousel-item img {
+  width: 100%; /* Ensure the image spans the full width of the container */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for captions */
+  padding: 10px;
+  border-radius: 5px;
+  height: 460px;
+
+}
+
+.carousel-caption h3 {
+  margin-top: 150px;
+  text-align: center;
+  font-size: 2.75rem;
+  font-weight: bold;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.carousel-caption h5 {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+button{
+  margin-top: 20px;
+  background-color:#465E0D;
+  padding: 10px;
+  border: solid 2px #465E0D;
+  border-radius: 10px;
+  color: antiquewhite;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+Link{
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,0 +1,105 @@
+/* Title Styling with Animation */
+.title {
+  text-align: center;
+  margin-top: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  background-color: #465E0D; /* Background color for the title */
+   /* Gradient background for text */
+   /* Ensure the background is clipped to the text */
+  color: transparent; /* Text color is transparent to show the gradient */
+  padding: 10px; /* Optional: Adds padding for a better visual appearance */
+  border-radius: 5px; /* Optional: Adds rounded corners */
+  animation: slideIn 1s ease-in-out;
+}
+
+/* Main Container */
+.main {
+  background-color: #dcf0d8; /* Light background color */
+  padding: 50px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  animation: fadeIn 1s ease-in-out; /* Add fade-in animation */
+}
+
+/* Text Card Styling */
+.text-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: slideUp 1s ease-in-out; /* Slide-in animation */
+}
+
+/* Image Container */
+.about-img-container {
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  animation: zoomIn 1s ease-in-out; /* Zoom animation for images */
+}
+
+/* Image Styling */
+.about-img-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0.5;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes colorPulse {
+  from {
+    background: linear-gradient(to right, #4caf50, #008cba);
+  }
+  to {
+    background: linear-gradient(to right, #008cba, #4caf50);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 30px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .text-card {
+    padding: 15px;
+  }
+}

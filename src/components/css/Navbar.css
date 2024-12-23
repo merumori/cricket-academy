@@ -1,0 +1,91 @@
+/* Navbar styles */
+.navbar {
+  background-color: #465E0D; /* Dark green background */
+  color: white;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item {
+  cursor: pointer;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #FFD700; /* Gold color on hover */
+}
+
+/* Hamburger menu styling (mobile view) */
+.navbar-toggler {
+  background-color: transparent;
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-color: white;
+  width: 30px;
+  height: 3px;
+}
+
+/* Custom media queries for responsiveness */
+@media (max-width: 991px) {
+  /* Mobile view: Hide the navbar items initially */
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    padding-left: 0;
+    margin-top: 10px;
+  }
+
+  /* When the menu is open, show the navbar items */
+  .navbar-collapse.show {
+    display: block;
+  }
+
+  .nav-link {
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 20px;
+  }
+}
+
+/* On tablet and mobile (below 768px), adjust menu for better visibility */
+@media (max-width: 200px) {
+  .navbar-nav {
+    display: none;
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+
+  .navbar-toggler-icon {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+  }
+}
+

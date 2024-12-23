@@ -1,0 +1,31 @@
+.footer {
+    background-color: #465E0D;
+  }
+  
+  .footer h5 {
+    margin-bottom: 20px;
+  }
+  
+  .footer a {
+    transition: color 0.3s;
+  }
+  
+  .footer a:hover {
+    color: #465E0D;
+  }
+  
+  .footer .bi {
+    font-size: 1.5rem;
+    transition: color 0.3s;
+  }
+  
+  .footer .bi:hover {
+    color: #465E0D;
+  }
+  .bg{
+    background-color: chocolate;
+  }
+  .list-unstyled{
+    color: aliceblue;
+  }
+  

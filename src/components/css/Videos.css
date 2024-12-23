@@ -1,0 +1,39 @@
+/* Videos Section Styles */
+.tital{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.video-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border: none;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.video-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.video-frame {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px 10px 0 0; /* Rounded top corners */
+}
+
+.card-title {
+  font-size: 1rem;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .video-card {
+    margin-bottom: 20px;
+  }
+
+  .video-frame {
+    height: 250px; /* Adjust height for smaller screens */
+  }
+}

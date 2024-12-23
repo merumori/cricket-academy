@@ -1,0 +1,81 @@
+/* TopBar.css */
+
+/* Olive green background for top bar */
+.bg-olive {
+  background-color: #4c6021; /* Olive green */
+}
+
+.top-bar {
+  color: white;
+  font-size: 14px;
+  background-color: #4c6021; /* Olive green */
+  padding: 10px 20px;
+}
+
+.top-bar-left,
+.top-bar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.social-icon {
+  font-size: 1.3rem;
+  color: white;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #ffd700; /* Gold color on hover */
+}
+
+.contact-info .contact-item {
+  font-size: 0.9rem;
+  color: white;
+  margin-left: 10px;
+}
+
+.contact-info .contact-item:hover {
+  text-decoration: underline;
+}
+
+.top-bar-right a {
+  color: white;
+  text-decoration: none;
+}
+
+.top-bar-right a:hover {
+  color: #ffd700; /* Gold color on hover */
+}
+
+/* Responsive Layout */
+@media (max-width: 767px) {
+  .top-bar-left {
+    flex-wrap: wrap; /* Stack social icons on small screens */
+    justify-content: center; /* Center the icons */
+  }
+
+  .top-bar-right {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .top-bar-right .location,
+  .top-bar-right span {
+    margin-bottom: 5px;
+  }
+
+  .contact-info {
+    display: none; /* Hide contact info on mobile */
+  }
+
+  .top-bar-left .social-icon {
+    margin-bottom: 10px; /* Add spacing between social icons */
+  }
+
+  .top-bar-right a {
+    display: block; /* Stack login/signup links */
+    text-align: center;
+    margin-bottom: 5px;
+  }
+}

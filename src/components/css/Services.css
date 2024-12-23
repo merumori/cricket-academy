@@ -1,0 +1,116 @@
+.services {
+  padding: 40px 0;
+  background-color: #f8f9fa;
+  text-align: center; /* Center align the content */
+}
+
+.services-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color:whitesmoke;
+  position: relative;
+  animation: fadeInDown 1.5s ease-out;
+  background-color: #465E0D; /* Background color for the title */
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  animation: fadeInUp 1.2s ease-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-body h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-body p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.enquire-button {
+  background-color: #465E0D;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.enquire-button:hover {
+  background-color: #465E0D;
+  transform: scale(1.1);
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .services-title {
+    font-size: 2rem;
+  }
+
+  .card-body h2 {
+    font-size: 1.3rem;
+  }
+
+  .card-body p {
+    font-size: 0.85rem;
+  }
+
+  .enquire-button {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+}

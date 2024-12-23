@@ -1,0 +1,67 @@
+/* Gallery Section Styles */
+.gallery-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border: none;
+  overflow: hidden;
+  border-radius: 10px; /* Rounded corners for the card */
+}
+
+.gallery-card:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.gallery-image {
+  height: 200px; /* Fixed height for images */
+  object-fit: cover; /* Ensure the image covers the area while maintaining aspect ratio */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+/* Title Styling */
+.tital {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff;
+  background-color: #465E0D; /* Add a background color */
+  display: inline-block;
+  padding: 10px 20px; /* Add padding around the text */
+  border-radius: 8px; /* Rounded corners */
+  animation: fadeInDown 1s ease-out; /* Animation effect */
+}
+
+/* Animation */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .gallery-card {
+    margin-bottom: 20px;
+  }
+
+  .tital {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+  }
+}

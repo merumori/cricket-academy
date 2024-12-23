@@ -1,0 +1,48 @@
+/* Title Styling with Animation */
+.title {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #465E0D;
+  color: white;
+  font-size: 1.8rem;
+  border-radius: 5px;
+  position: relative;
+  animation: slide-in 1s ease-in-out;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Card Styling */
+.testimonial-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feedback {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.name {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+  text-align: right;
+}

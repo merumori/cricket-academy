@@ -1,0 +1,15 @@
+/* Ensure the footer sticks to the bottom of the page */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.App {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto; /* Pushes the footer to the bottom */
+}
